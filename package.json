@@ -1,0 +1,23 @@
+{
+  "name": "projekt-5",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start_dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.5",
+    "debug": "~4.3.1",
+    "express": "~4.17.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.8.0",
+    "morgan": "~1.10.0",
+    "pug": "3.0.0",
+    "xml2js": "^0.4.23",
+    "xsd-schema-validator": "^0.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

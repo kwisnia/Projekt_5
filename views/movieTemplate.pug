@@ -1,0 +1,39 @@
+extends xmlcollection
+
+block movie
+    each movie in movies
+        .film
+            img.poster(width='50%' src= movie.plakat alt='plakat')
+            .info
+                h1= movie.informacje_o_filmie.tytul
+                h2= movie.informacje_o_filmie.org_tytul
+                each genre in genres
+                    if movie.$.idRef == genre.$.id
+                        h2= genre._
+                p.rezyser= movie.informacje_o_filmie.rezyser
+                p.kraje_produkcji= movie.informacje_o_filmie.kraj_produkcji
+                .ocena_na_filmwebie
+                    img(width='30px' src='https://fwcdn.pl/front/ogfx/icons2/filmweb-touchbar-icon.svg' alt='Ocena Filmweb')
+                    p.grade.bold= movie.informacje_o_filmie.ocena_na_filmwebie
+                .ocena_rotten_tomatoes
+                    img(width='30px' src='https://upload.wikimedia.org/wikipedia/commons/5/5b/Rotten_Tomatoes.svg' alt='Ocena Rotten Tomatoes')
+                    p.grade.bold #{movie.informacje_o_filmie.ocena_rotten_tomatoes._}#{movie.informacje_o_filmie.ocena_rotten_tomatoes.$.jednostka}
+                p.ocena_osobista.grade.bold= movie.informacje_o_filmie.ocena_osobista
+                p.box_office.bold #{movie.informacje_o_filmie.box_office._}#{movie.informacje_o_filmie.box_office.$.waluta}
+                .liczba_oscarow
+                    img(width='30px' src='https://www.svgrepo.com/show/262098/oscar.svg' alt='Liczba oscarow')
+                    p.liczba_oscarow.bold= movie.informacje_o_filmie.liczba_oscarow
+                ul.lista_oscarow
+                    each oscar in movie.informacje_o_filmie.lista_oscarow.oscar
+                        li.oscar= oscar
+                p.format_obrazu= movie.informacje_o_filmie.format_obrazu
+                .daty_premiery
+                    .data_premiery
+                        img(width='30px' src='https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg' alt='Data światowa')
+                        p= movie.informacje_o_filmie.daty_premiery.data_premiery[0]._
+                    .data_premiery
+                        img(width='30px' src='https://www.svgrepo.com/show/242317/poland.svg' alt='Data polska')
+                        p= movie.informacje_o_filmie.daty_premiery.data_premiery[1]._
+                button(onClick=`document.location.href='/moviecollection/editMovie/${movie.$.numer_filmu}'`) Edytuj film
+                button(onClick=`document.location.href='/moviecollection/deleteMovie/${movie.$.numer_filmu}'`) Usuń film
+

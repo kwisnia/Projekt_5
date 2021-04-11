@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wiiiiii.pl" xmlns:dane="http://www.wiiiiii.pl">
+
+    <xs:simpleType name="imieNazwiskoProste">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-ZŻŹĆĄŚĘŁÓŃ][a-zżźćńółęąśáñ\-]+\s([A-Z][a-zżźćńółęąś\-]+\s*)+" />
+            <xs:maxLength value="30" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="imieNazwiskoZlozone">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-ZŻŹĆĄŚĘŁÓŃ][A-Za-zżźćńółęąśáñ\-\s/]*" />
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="imieNazwisko">
+        <xs:union memberTypes="dane:imieNazwiskoProste dane:imieNazwiskoZlozone" />
+    </xs:simpleType>
+
+    <xs:simpleType name="numerIndeksu">
+        <xs:restriction base="xs:int">
+            <xs:pattern value="\d{6}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="data">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([012][0-9]|3[01])\-(0[1-9]|1[0-2])\-[1-9]\d{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="id">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]\d+" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="formatObrazu">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="2.39:1" />
+            <xs:enumeration value="2.00:1" />
+            <xs:enumeration value="1.85:1" />
+            <xs:enumeration value="1.33:1" />
+            <xs:enumeration value="2.35:1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ocenaNa10">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\d|10)/10" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ocenaInt">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ocenaNotInt">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0" />
+            <xs:maxInclusive value="10.0" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="boolean">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="tak|nie" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="jednostka">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[$%€£]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="skrot">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2,3}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="krotkiTekst">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dlugiTekst">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="51" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="link">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="rok">
+        <xs:restriction base="xs:int">
+            <xs:pattern value="\d{4}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="malaLiczba">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="wielkaLiczba">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="100000" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="listaAktorow">
+        <xs:list itemType="dane:krotkiTekst" />
+    </xs:simpleType>
+</xs:schema>

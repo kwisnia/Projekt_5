@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        title Dodaj nowy film
+        script(src='/javascripts/dynamicOscars.js')
+
+    body
+        div(style='display: inline-block')
+            img#preview(width='500px' alt='Podglad plakatu' src='' style='display: inline-block; position: absolute')
+            form(action='/moviecollection/addMovie' method='post' style='width: 50vw; display: inline-block; position: absolute; left:20vw')
+                label(for='gatunek') Wybierz gatunek:
+                br
+                select(name='idRef' id='gatunek')
+                    each genre in genres
+                        option(value=genre.$.id)= genre._ 
+                br
+                label(for='plakat_url') Link do plakatu:
+                br
+                input#plakat_url(type='text' name='plakat' value='' oninput='updatePreview()')
+                br
+                label(for='tytul_filmu') Tytuł filmu:
+                br
+                input#tytul_filmu(type='text' name='tytul' value='')
+                br
+                label(for='org_tytul_filmu') Oryginalny tytuł filmu:
+                br
+                input#org_tytul_filmu(type='text' name='org_tytul' value='')
+                br
+                label(for='rezyser_filmu') Reżyser:
+                br
+                input#rezyser_filmu(type='text' name='rezyser' value='')
+                br
+                label(for='kraj_produkcji_filmu') Kraj/kraje produkcji:
+                br
+                input#kraj_produkcji_filmu(type='text' name='kraj_produkcji' value='')
+                br
+                label(for='ocena_filmweb_filmu') Ocena na filmwebie:
+                br
+                input#ocena_filmweb_filmu(type='text' name='ocena_na_filmwebie' value='')
+                br
+                label(for='ocena_rotten_filmu') Ocena na Rotten Tomatoes:
+                br
+                input#ocena_rotten_filmu(type='number' name='ocena_rotten_tomatoes' value='' min='0' max='100')
+                br
+                label(for='ocena_osobista_filmu') Ocena osobista:
+                br
+                input#ocena_osobista_filmu(type='text' name='ocena_osobista' value='')
+                br
+                label(for='box_office_filmu') Box office:
+                br
+                input#box_office_filmu(type='number' name='box_office' value='' min='100000')
+                br
+                label(for='liczba_oscarow_filmu') Liczba oscarów:
+                br
+                input#liczba_oscarow_filmu(type='number' name='liczba_oscarow' value='' oninput='modifyOscarList()' min='1' max='25')
+                br
+                label(for='format_filmu') Format obrazu:
+                br
+                input#format_filmu(type='text' name='format_obrazu' value='')
+                br
+                label(for='data_global_filmu') Data premiery globalna (DD-MM-YYYY):
+                br
+                input#data_global_filmu(type='text' name='data_global_filmu' value='')
+                br
+                label(for='data_pl_filmu') Data premiery polska (DD-MM-YYYY):
+                br
+                input#data_pl_filmu(type='text' name='data_pl_filmu' value='')
+                br
+                label(for='oscars') Lista oscarów, które zdobył film:
+                #oscars
+                    p(style='text-align: center') Podaj liczbę oscarów, by je dodać
+                br
+                br
+                input(type='submit' value='Dodaj film')
+                br
+                button(type='button' onClick=`document.location.href='/moviecollection'`) Anuluj i wróć do bazy filmów
+

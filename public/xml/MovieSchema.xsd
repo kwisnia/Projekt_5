@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="MovieList.xml" xmlns:proj="MovieList.xml" xmlns:dane="http://www.wiiiiii.pl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="typyDanych.xsd" namespace="http://www.wiiiiii.pl" />
+  <xs:element name="baza_filmow" type="proj:baza_filmowType">
+    <xs:key name="gId">
+      <xs:selector xpath="proj:gatunki/proj:gatunek" />
+      <xs:field xpath="@id" />
+    </xs:key>
+    <xs:keyref name="gatRef" refer="proj:gId">
+      <xs:selector xpath="proj:kolekcja_filmow_oscarowych/proj:film" />
+      <xs:field xpath="@idRef" />
+    </xs:keyref>
+  </xs:element>
+
+  <xs:group name="informacje_dodatkowe">
+    <xs:sequence>
+      <xs:element type="dane:imieNazwisko" name="autor" />
+      <xs:element type="dane:data" name="data_utworzenia" />
+      <xs:element type="dane:data" name="data_ostatniej_modyfikacji" />
+    </xs:sequence>
+  </xs:group>
+
+  <xs:complexType name="gatunekType">
+    <xs:simpleContent>
+      <xs:extension base="dane:krotkiTekst">
+        <xs:attribute type="dane:id" name="id" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="gatunkiType">
+    <xs:sequence>
+      <xs:element type="proj:gatunekType" name="gatunek" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ocena_rotten_tomatoesType">
+    <xs:simpleContent>
+      <xs:extension base="dane:ocenaInt">
+        <xs:attribute type="dane:jednostka" name="jednostka" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="ocena_osobistaType">
+    <xs:simpleContent>
+      <xs:extension base="dane:ocenaNa10">
+        <xs:attribute type="dane:boolean" name="ulubiony" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="box_officeType">
+    <xs:simpleContent>
+      <xs:extension base="dane:wielkaLiczba">
+        <xs:attribute type="dane:jednostka" name="waluta" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+  <xs:complexType name="lista_oscarowType">
+    <xs:sequence>
+      <xs:element type="dane:krotkiTekst" name="oscar" maxOccurs="24" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="data_premieryType">
+    <xs:simpleContent>
+      <xs:extension base="dane:data">
+        <xs:attribute type="dane:krotkiTekst" name="region" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="daty_premieryType">
+    <xs:sequence>
+      <xs:element type="proj:data_premieryType" name="data_premiery" maxOccurs="unbounded" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="informacje_o_filmieType">
+    <xs:sequence>
+      <xs:element type="dane:krotkiTekst" name="tytul" />
+      <xs:element type="dane:krotkiTekst" name="org_tytul" />
+      <xs:element type="dane:imieNazwisko" name="rezyser" />
+      <xs:choice>
+        <xs:element type="dane:krotkiTekst" name="kraj_produkcji" />
+        <xs:element type="proj:kraje_produkcjiType" name="kraje_produkcji" />
+      </xs:choice>
+      <xs:element type="dane:ocenaNotInt" name="ocena_na_filmwebie" />
+      <xs:element type="proj:ocena_rotten_tomatoesType" name="ocena_rotten_tomatoes" />
+      <xs:element type="proj:ocena_osobistaType" name="ocena_osobista" minOccurs="0" maxOccurs="1" />
+      <xs:element type="proj:box_officeType" name="box_office" />
+      <xs:element type="dane:malaLiczba" name="liczba_oscarow" />
+      <xs:element type="proj:lista_oscarowType" name="lista_oscarow" />
+      <xs:element name="format_obrazu" type="dane:formatObrazu" />
+      <xs:element type="proj:daty_premieryType" name="daty_premiery" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="filmType">
+    <xs:sequence>
+      <xs:element type="dane:link" name="plakat" />
+      <xs:element type="proj:informacje_o_filmieType" name="informacje_o_filmie" />
+    </xs:sequence>
+    <xs:attribute type="dane:malaLiczba" name="numer_filmu" use="optional" />
+    <xs:attribute type="dane:id" name="idRef" use="optional" />
+  </xs:complexType>
+
+  <xs:complexType name="krajType">
+    <xs:simpleContent>
+      <xs:extension base="dane:krotkiTekst"></xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="kraje_produkcjiType">
+    <xs:sequence>
+      <xs:element type="proj:krajType" name="kraj" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kolekcja_filmow_oscarowychType">
+    <xs:sequence>
+      <xs:element type="proj:filmType" name="film" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="informacje_dodatkoweType">
+    <xs:group ref="proj:informacje_dodatkowe" />
+  </xs:complexType>
+
+  <xs:complexType name="baza_filmowType">
+    <xs:sequence>
+      <xs:element type="proj:informacje_dodatkoweType" name="informacje_dodatkowe" />
+      <xs:element type="proj:gatunkiType" name="gatunki" />
+      <xs:element type="dane:krotkiTekst" name="naglowek" />
+      <xs:element type="proj:kolekcja_filmow_oscarowychType" name="kolekcja_filmow_oscarowych" />
+    </xs:sequence>
+    <xs:attribute type="dane:skrot" name="lang" />
+  </xs:complexType>
+
+</xs:schema>

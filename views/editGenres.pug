@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Edycja gatunków
+        script(src='/javascripts/genresAdd.js')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        h1 Edycja gatunków
+        form#genreList(action='/moviecollection/editGenres' method='post')
+            #genres
+                each genre in genres
+                    input.genreField(type='text' name=genre.$.id value=genre._)
+                    br
+            button#add(type='button' onClick="addField()") Dodaj gatunek
+            br
+            input#accept(type='submit' value='Zatwierdź zmiany')
+            button(type='button' onClick=`document.location.href='/moviecollection'` style='margin: auto') Anuluj zmiany i wróć do bazy
+        br
+        h1 Usuwanie gatunków
+        each genre in genres
+            button(onClick=`document.location.href='/moviecollection/deleteGenre/${genre.$.id}'`) Usuń gatunek #{genre._} i filmy z tego gatunku
+

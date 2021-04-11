@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: #fdeaaa;
+  color: #8b6220;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+.informacje_dodatkowe * {
+  display: block;
+}
+header {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.movieCollection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
+}
+
+form * {
+  display: block;
+}
+/* .movieCollection::after {
+  content: "";
+  background: url(https://i.imgur.com/ZYQ8Vlo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+} */
+
+#add {
+  margin: auto;
+}
+
+.film {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.film::after {
+  padding: 0.2%;
+  font-size: 25px;
+}
+.film[idRef="g1"]::after {
+  content: "Gatunek: Fantasy";
+}
+.film[idRef="g2"]::after {
+  content: "Gatunek: Dramat";
+}
+.film[idRef="g3"]::after {
+  content: "Gatunek: Thriller";
+}
+.film[idRef="g4"]::after {
+  content: "Gatunek: Biograficzny";
+}
+.film[idRef="g5"]::after {
+  content: "Gatunek: Romans";
+}
+.film[idRef="g6"]::after {
+  content: "Gatunek: Wojenny";
+}
+.film[idRef="g7"]::after {
+  content: "Gatunek: Kryminał";
+}
+.film[idRef="g8"]::after {
+  content: "Gatunek: Dramat historyczny";
+}
+
+.poster {
+  width: 48%;
+  height: auto;
+  margin: 0 4%;
+}
+
+label {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+input, select {
+  margin: auto;
+  display: block;
+}
+[rok_nagrody="2020"] > img {
+  background: url(https://assets.fontsinuse.com/static/use-media-items/97/96759/full-1351x1800/5d940c87/parasite_poster.jpeg?resolution=0);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2019"] > img {
+  background: url(https://www.hollywoodawards.com/wp-content/uploads/2018/10/GreenBook-1000x1482.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2018"] > img {
+  background: url(https://chicagocrusader.com/wp-content/uploads/sites/2/2017/12/SHAPE-OF-WATER2.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2017"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/91PbfpzX5uL._AC_SL1500_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2016"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/71Wp12p6l6L._AC_SY879_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2015"] > img {
+  background: url(https://ih1.redbubble.net/image.1027096256.4377/flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2014"] > img {
+  background: url(https://www.goldenglobes.com/sites/default/files/articles/cover_images/2014-12-years-a-slave_0.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2013"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/91ZzxXt17zL._AC_SL1500_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2012"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/61vEXxfSfiL._AC_SL1500_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2011"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/81IqfwgR1vL._AC_SL1500_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2010"] > img {
+  background: url(https://ae01.alicdn.com/kf/H99ff7119fb2f41f0b5220790732ff4adz/THE-HURT-LOCKER-MOVIE-Art-print-Silk-poster-Home-Wall-Decor.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2009"] > img {
+  background: url(https://i.wpimg.pl/730x0/m.gadzetomania.pl/1224872312-e5ed7bc3058af8c7165b7.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2008"] > img {
+  background: url(https://cdn.shopify.com/s/files/1/1416/8662/products/no_country_for_old_men_2007_original_film_art_5000x.jpg?v=1587153496);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2007"] > img {
+  background: url(https://cdn.shopify.com/s/files/1/1416/8662/products/departed_2006_original_film_art_5000x.jpg?v=1569061689);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2006"] > img {
+  background: url(https://cdn.shopify.com/s/files/1/1416/8662/products/Crash_original_film_art_spo_5000x.jpg?v=1568873113);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2005"] > img {
+  background: url(https://cdn.shopify.com/s/files/1/1416/8662/products/million_dollar_baby_2004_original_film_art_f_1200x.jpg?v=1578181425);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2004"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/81lD6R3Yu6L._AC_SL1304_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2003"] > img {
+  background: url(https://cdn.shopify.com/s/files/1/0037/8008/3782/products/chicago_intl_switched_style_BM11630_B_2_framed1_1220x.jpg?v=1578561162);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2002"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/71H2V7IrlYL._AC_SL1423_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2001"] > img {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/71sj8Yt20qL._AC_SL1336_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+[rok_nagrody="2000"] > img {
+  background: url(https://cdn.shopify.com/s/files/1/1416/8662/products/american_beauty_1999_original_film_art_f_5000x.jpg?v=1569275709);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.info h1 {
+  position: relative;
+  transition: left ease 0.5s;
+  left: 0;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  padding-top: 2%;
+}
+
+.info h1:hover {
+  left: 20px;
+}
+
+h2 {
+  font-size: 25px;
+  position: relative;
+  top: -11px;
+  left: 5px;
+  color: grey;
+}
+
+.info > * {
+  padding: 1px;
+}
+
+.box_office::after {
+  content: attr(waluta);
+}
+
+.ocena_na_filmwebie {
+  margin-top: 2%;
+}
+.ocena_osobista {
+  margin-bottom: 2%;
+}
+.ocena_osobista[ulubiony]::after {
+  content: " \2665";
+}
+.grade {
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.data_premiery *
+  {
+  display: inline-block;
+  }
+
+
+autor::before {
+  content: "Autor: ";
+}
+nr_indeksu::before {
+  content: "Numer indeksu: ";
+}
+data_utworzenia::before {
+  content: "Data utworzenia: ";
+}
+data_ostatniej_modyfikacji::before {
+  content: "Data ostatniej modyfikacji: ";
+}
+.rezyser::before {
+  content: "Reżyser: ";
+}
+.kraje_produkcji::before {
+  content: "Kraje produkcji: ";
+}
+.ocena_osobista::before {
+  content: "Ocena osobista: ";
+}
+.box_office::before {
+  content: "Box office: ";
+}
+daty_premiery::before {
+  content: "Daty premiery: ";
+}
+.format_obrazu::before {
+  content: "Format obrazu: ";
+}
+
+[stopien_oceny="zla"] {
+  color: #654f6f;
+}
+[stopien_oceny="srednia"] {
+  color: #3c6e71;
+}
+[stopien_oceny="dobra"] {
+  color: #329f5b;
+}
+[stopien_oceny="bdobra"] {
+  color: #0c8346;
+}
+
+.box_office::before,
+.format_obrazu::before,
+.ocena_osobista::before {
+  font-weight: normal;
+  color: #8b6220;
+}
+
+.liczba_oscarow {
+  display: inline-block;
+  font-size: 35px;
+  counter-reset: licznik;
+}
+
+.lista_oscarow {
+  padding-left: 5%;
+}
+
+.oscar {
+  list-style-type: "⭐";
+}
+
+/* .kraj::before,
+.data_premiery::before,
+.liczba_oscarow::before,
+.ocena_rotten_tomatoes::before,
+.ocena_na_filmwebie::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+} */
+
+.ocena_rotten_tomatoes::after {
+  content: attr(jednostka);
+}
+
+.ocena_rotten_tomatoes *,
+.ocena_na_filmwebie * {
+  display: inline-block;
+}
+
+/* .kraj {
+  display: block;
+} */
+/* kraj:first-child {
+  display: inline-block;
+}
+kraj:not(:first-child) {
+  position: relative;
+  left: 37.5%;
+} */
+
+[ikona="i1"]::before {
+  background: url(https://fwcdn.pl/front/ogfx/icons2/filmweb-touchbar-icon.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+[ikona="i2"]::before {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Rotten_Tomatoes.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+[ikona="i3"]::before {
+  background: url(https://www.svgrepo.com/show/262098/oscar.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+[ikona="i4"]::before {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+[ikona="i5"]::before {
+  background: url(https://www.svgrepo.com/show/242317/poland.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  kolekcja_filmow_oscarowych {
+    grid-template-columns: 1fr;
+  }
+}

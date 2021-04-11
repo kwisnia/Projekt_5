@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<baza_filmow lang="PL" xmlns="MovieList.xml" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="MovieList.xml MovieSchema.xsd">
+  <informacje_dodatkowe>
+    <autor>Kacper Wiśniewski</autor>
+    <data_utworzenia>10-10-2020</data_utworzenia>
+    <data_ostatniej_modyfikacji>21-01-2021</data_ostatniej_modyfikacji>
+  </informacje_dodatkowe>
+  <gatunki>
+    <gatunek id="g1">Fantasy</gatunek>
+    <gatunek id="g2">Dramat</gatunek>
+    <gatunek id="g3">Thriller</gatunek>
+    <gatunek id="g4">Biograficzny</gatunek>
+    <gatunek id="g5">Romans</gatunek>
+    <gatunek id="g6">Wojenny</gatunek>
+    <gatunek id="g7">Kryminał</gatunek>
+    <gatunek id="g8">Dramat historyczny</gatunek>
+  </gatunki>
+  <naglowek>Kolekcja filmów nagrodzonych Oscarem</naglowek>
+  <kolekcja_filmow_oscarowych>
+    <film numer_filmu="2" idRef="g2">
+      <plakat>https://www.hollywoodawards.com/wp-content/uploads/2018/10/GreenBook-1000x1482.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Green Book</tytul>
+        <org_tytul>Green Book</org_tytul>
+        <rezyser>Peter Farrelly</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>8.2</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">77</ocena_rotten_tomatoes>
+        <ocena_osobista>8/10</ocena_osobista>
+        <box_office waluta="$">327900000</box_office>
+        <liczba_oscarow>3</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy aktor drugoplanowy</oscar>
+          <oscar>Najlepszy scenariusz oryginalny</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.00:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">11-09-2018</data_premiery>
+          <data_premiery region="pl">25-12-2018</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="3" idRef="g1">
+      <plakat>https://chicagocrusader.com/wp-content/uploads/sites/2/2017/12/SHAPE-OF-WATER2.jpeg</plakat>
+      <informacje_o_filmie>
+        <tytul>Kształt Wody</tytul>
+        <org_tytul>The Shape of Water</org_tytul>
+        <rezyser>Guillermo del Toro</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>6.4</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">92</ocena_rotten_tomatoes>
+        <ocena_osobista>7/10</ocena_osobista>
+        <box_office waluta="$">195300000</box_office>
+        <liczba_oscarow>4</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepsza scenografia</oscar>
+          <oscar>Najlepsza muzyka oryginalna</oscar>
+        </lista_oscarow>
+        <format_obrazu>1.85:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">31-07-2017</data_premiery>
+          <data_premiery region="pl">16-02-2018</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="4" idRef="g2">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/91PbfpzX5uL._AC_SL1500_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Moonlight</tytul>
+        <org_tytul>Moonlight</org_tytul>
+        <rezyser>Barry Jenkins</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>6.6</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">98</ocena_rotten_tomatoes>
+        <ocena_osobista>5/10</ocena_osobista>
+        <box_office waluta="$">65300000</box_office>
+        <liczba_oscarow>3</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy aktor drugoplanowy</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">02-09-2016</data_premiery>
+          <data_premiery region="pl">17-02-2017</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="5" idRef="g2">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/71Wp12p6l6L._AC_SY879_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Spotlight</tytul>
+        <org_tytul>Spotlight</org_tytul>
+        <rezyser>Tom McCarthy</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.6</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">97</ocena_rotten_tomatoes>
+        <ocena_osobista>9/10</ocena_osobista>
+        <box_office waluta="$">98300000</box_office>
+        <liczba_oscarow>2</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy scenariusz oryginalny</oscar>
+        </lista_oscarow>
+        <format_obrazu>1.85:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">03-09-2015</data_premiery>
+          <data_premiery region="pl">05-02-2016</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="6" idRef="g2">
+      <plakat>https://ih1.redbubble.net/image.1027096256.4377/flat,750x,075,f-pad,750x1000,f8f8f8.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Birdman</tytul>
+        <org_tytul>Birdman or (The Unexpected Virtue of Ignorance)</org_tytul>
+        <rezyser>Alejandro González Iñárritu</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.2</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">91</ocena_rotten_tomatoes>
+        <ocena_osobista>9/10</ocena_osobista>
+        <box_office waluta="$">103200000</box_office>
+        <liczba_oscarow>4</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz oryginalny</oscar>
+          <oscar>Najlepsze zdjęcia</oscar>
+        </lista_oscarow>
+        <format_obrazu>1.85:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">27-08-2014</data_premiery>
+          <data_premiery region="pl">23-01-2015</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="7" idRef="g4">
+      <plakat>https://www.goldenglobes.com/sites/default/files/articles/cover_images/2014-12-years-a-slave_0.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Zniewolony. 12 Years A Slave</tytul>
+        <org_tytul>12 Years a Slave</org_tytul>
+        <rezyser>Steve McQueen</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.5</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">95</ocena_rotten_tomatoes>
+        <ocena_osobista>5/10</ocena_osobista>
+        <box_office waluta="$">187700000</box_office>
+        <liczba_oscarow>3</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepsza aktorka drugoplanowa</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">30-08-2013</data_premiery>
+          <data_premiery region="pl">31-01-2014</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="8" idRef="g3">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/91ZzxXt17zL._AC_SL1500_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Operacja Argo</tytul>
+        <org_tytul>Argo</org_tytul>
+        <rezyser>Ben Affleck</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.3</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">96</ocena_rotten_tomatoes>
+        <ocena_osobista>7/10</ocena_osobista>
+        <box_office waluta="$">232300000</box_office>
+        <liczba_oscarow>3</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy montaż</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">31-08-2012</data_premiery>
+          <data_premiery region="pl">30-11-2012</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="9" idRef="g5">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/61vEXxfSfiL._AC_SL1500_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Artysta</tytul>
+        <org_tytul>The Artist</org_tytul>
+        <rezyser>Michel Hazanavicius</rezyser>
+        <kraj_produkcji>USA/Belgia/Francja</kraj_produkcji>
+        <ocena_na_filmwebie>7.5</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">95</ocena_rotten_tomatoes>
+        <ocena_osobista>8/10</ocena_osobista>
+        <box_office waluta="$">133400000</box_office>
+        <liczba_oscarow>5</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy aktor pierwszoplanowy</oscar>
+          <oscar>Najlepsza muzyka oryginalna</oscar>
+          <oscar>Najlepsze kostiumy</oscar>
+        </lista_oscarow>
+        <format_obrazu>1.33:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">15-05-2011</data_premiery>
+          <data_premiery region="pl">10-02-2012</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="10" idRef="g4">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/81IqfwgR1vL._AC_SL1500_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Jak zostać królem</tytul>
+        <org_tytul>The King's Speech</org_tytul>
+        <rezyser>Tom Hooper</rezyser>
+        <kraj_produkcji>USA/Wielka Brytania/Australia</kraj_produkcji>
+        <ocena_na_filmwebie>7.8</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">94</ocena_rotten_tomatoes>
+        <ocena_osobista>10/10</ocena_osobista>
+        <box_office waluta="$">424000000</box_office>
+        <liczba_oscarow>4</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz oryginalny</oscar>
+          <oscar>Najlepszy aktor pierwszoplanowy</oscar>
+        </lista_oscarow>
+        <format_obrazu>1.85:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">06-09-2010</data_premiery>
+          <data_premiery region="pl">28-01-2011</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="11" idRef="g6">
+      <plakat>https://ae01.alicdn.com/kf/H99ff7119fb2f41f0b5220790732ff4adz/THE-HURT-LOCKER-MOVIE-Art-print-Silk-poster-Home-Wall-Decor.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>The Hurt Locker. W pułapce wojny</tytul>
+        <org_tytul>The Hurt Locker</org_tytul>
+        <rezyser>Kathryn Bigelow</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.3</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">97</ocena_rotten_tomatoes>
+        <ocena_osobista>7/10</ocena_osobista>
+        <box_office waluta="$">49200000</box_office>
+        <liczba_oscarow>6</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz oryginalny</oscar>
+          <oscar>Najlepszy montaż</oscar>
+          <oscar>Najlepszy dźwięk</oscar>
+          <oscar>Najlepszy montaż dźwięku</oscar>
+        </lista_oscarow>
+        <format_obrazu>1.85:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">04-09-2008</data_premiery>
+          <data_premiery region="pl">15-02-2010</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="12" idRef="g2">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/71EgVOVLUHL._AC_SY741_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Slumdog. Milioner z ulicy</tytul>
+        <org_tytul>Slumdog Millionaire</org_tytul>
+        <rezyser>Danny Boyle</rezyser>
+        <kraj_produkcji>Wielka Brytania</kraj_produkcji>
+        <ocena_na_filmwebie>7.4</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">91</ocena_rotten_tomatoes>
+        <ocena_osobista>4/10</ocena_osobista>
+        <box_office waluta="$">378100000</box_office>
+        <liczba_oscarow>8</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+          <oscar>Najlepsza muzyka oryginalna</oscar>
+          <oscar>Najlepsza piosenka</oscar>
+          <oscar>Najlepsze zdjęcia</oscar>
+          <oscar>Najlepszy dźwięk</oscar>
+          <oscar>Najlepszy montaż</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.35:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">30-08-2008</data_premiery>
+          <data_premiery region="pl">27-02-2009</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="13" idRef="g3">
+      <plakat>https://cdn.shopify.com/s/files/1/1416/8662/products/no_country_for_old_men_2007_original_film_art_5000x.jpg?v=1587153496</plakat>
+      <informacje_o_filmie>
+        <tytul>To nie jest kraj dla starych ludzi</tytul>
+        <org_tytul>No Country for Old Men</org_tytul>
+        <rezyser>Joel Coen/Ethan Coen</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.6</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">93</ocena_rotten_tomatoes>
+        <ocena_osobista>7/10</ocena_osobista>
+        <box_office waluta="$">171600000</box_office>
+        <liczba_oscarow>4</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+          <oscar>Najlepszy aktor drugoplanowy</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">19-05-2007</data_premiery>
+          <data_premiery region="pl">15-02-2008</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="14" idRef="g7">
+      <plakat>https://i.pinimg.com/originals/7c/3e/31/7c3e315e921c74890acbdc8b05c85397.png</plakat>
+      <informacje_o_filmie>
+        <tytul>Infiltracja</tytul>
+        <org_tytul>The Departed</org_tytul>
+        <rezyser>Martin Scorsese</rezyser>
+        <kraj_produkcji>USA/Hongkong</kraj_produkcji>
+        <ocena_na_filmwebie>8.0</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">91</ocena_rotten_tomatoes>
+        <ocena_osobista>6/10</ocena_osobista>
+        <box_office waluta="$">291500000</box_office>
+        <liczba_oscarow>4</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+          <oscar>Najlepszy montaż</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">26-09-2006</data_premiery>
+          <data_premiery region="pl">27-10-2006</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="15" idRef="g2">
+      <plakat>https://cdn.shopify.com/s/files/1/1416/8662/products/Crash_original_film_art_spo_5000x.jpg?v=1568873113</plakat>
+      <informacje_o_filmie>
+        <tytul>Miasto Gniewu</tytul>
+        <org_tytul>Crash</org_tytul>
+        <rezyser>Paul Haggis</rezyser>
+        <kraj_produkcji>USA/Niemcy</kraj_produkcji>
+        <ocena_na_filmwebie>7.6</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">74</ocena_rotten_tomatoes>
+        <ocena_osobista>5/10</ocena_osobista>
+        <box_office waluta="$">101200000</box_office>
+        <liczba_oscarow>3</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy scenariusz oryginalny</oscar>
+          <oscar>Najlepszy montaż</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.35:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">10-09-2004</data_premiery>
+          <data_premiery region="pl">22-07-2005</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="16" idRef="g2">
+      <plakat>https://cdn.shopify.com/s/files/1/1416/8662/products/million_dollar_baby_2004_original_film_art_f_1200x.jpg?v=1578181425</plakat>
+      <informacje_o_filmie>
+        <tytul>Za wszelką cenę</tytul>
+        <org_tytul>Million Dollar Baby</org_tytul>
+        <rezyser>Clint Eastwood</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.8</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">91</ocena_rotten_tomatoes>
+        <ocena_osobista>10/10</ocena_osobista>
+        <box_office waluta="$">216800000</box_office>
+        <liczba_oscarow>4</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepsza aktorka pierwszoplanowa</oscar>
+          <oscar>Najlepszy aktor drugoplanowy</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">15-12-2004</data_premiery>
+          <data_premiery region="pl">18-02-2005</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="17" idRef="g1">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/81lD6R3Yu6L._AC_SL1304_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Władca Pierścieni. Powrót króla</tytul>
+        <org_tytul>The Lord of the Rings: The Return of the King</org_tytul>
+        <rezyser>Peter Jackson</rezyser>
+        <kraj_produkcji>USA/Nowa Zelandia</kraj_produkcji>
+        <ocena_na_filmwebie>8.4</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">93</ocena_rotten_tomatoes>
+        <ocena_osobista>9/10</ocena_osobista>
+        <box_office waluta="$">1142000000</box_office>
+        <liczba_oscarow>11</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+          <oscar>Najlepsza charakteryzacja</oscar>
+          <oscar>Najlepsza muzyka oryginalna</oscar>
+          <oscar>Najlepsza piosenka</oscar>
+          <oscar>Najlepsza scenografia</oscar>
+          <oscar>Najlepsze efekty specjalne</oscar>
+          <oscar>Najlepsze kostiumy</oscar>
+          <oscar>Najlepszy dźwięk</oscar>
+          <oscar>Najlepszy montaż</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">01-12-2003</data_premiery>
+          <data_premiery region="pl">01-01-2004</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="18" idRef="g7">
+      <plakat>https://cdn.shopify.com/s/files/1/0037/8008/3782/products/chicago_intl_switched_style_BM11630_B_2_framed1_1220x.jpg?v=1578561162</plakat>
+      <informacje_o_filmie>
+        <tytul>Chicago</tytul>
+        <org_tytul>Chicago</org_tytul>
+        <rezyser>Rob Marshall</rezyser>
+        <kraj_produkcji>USA/Niemcy</kraj_produkcji>
+        <ocena_na_filmwebie>7.4</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">86</ocena_rotten_tomatoes>
+        <ocena_osobista>7/10</ocena_osobista>
+        <box_office waluta="$">306800000</box_office>
+        <liczba_oscarow>6</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepsza aktorka drugoplanowa</oscar>
+          <oscar>Najlepsza scenografia</oscar>
+          <oscar>Najlepsze kostiumy</oscar>
+          <oscar>Najlepszy dźwięk</oscar>
+          <oscar>Najlepszy montaż</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">10-12-2002</data_premiery>
+          <data_premiery region="pl">14-03-2003</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="19" idRef="g4">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/71H2V7IrlYL._AC_SL1423_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Piękny umysł</tytul>
+        <org_tytul>A Beautiful Mind</org_tytul>
+        <rezyser>Ron Howard</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>8.3</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">74</ocena_rotten_tomatoes>
+        <ocena_osobista>7/10</ocena_osobista>
+        <box_office waluta="$">313000000</box_office>
+        <liczba_oscarow>4</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz adaptowany</oscar>
+          <oscar>Najlepsza aktorka drugoplanowa</oscar>
+        </lista_oscarow>
+        <format_obrazu>1.85:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">13-12-2001</data_premiery>
+          <data_premiery region="pl">01-03-2002</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="20" idRef="g8">
+      <plakat>https://images-na.ssl-images-amazon.com/images/I/71sj8Yt20qL._AC_SL1336_.jpg</plakat>
+      <informacje_o_filmie>
+        <tytul>Gladiator</tytul>
+        <org_tytul>Gladiator</org_tytul>
+        <rezyser>Ridley Scott</rezyser>
+        <kraj_produkcji>USA/Wielka Brytania</kraj_produkcji>
+        <ocena_na_filmwebie>8.1</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">77</ocena_rotten_tomatoes>
+        <ocena_osobista>10/10</ocena_osobista>
+        <box_office waluta="$">460500000</box_office>
+        <liczba_oscarow>5</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy aktor pierwszoplanowy</oscar>
+          <oscar>Najlepsze efekty specjalne</oscar>
+          <oscar>Najlepsze kostiumy</oscar>
+          <oscar>Najlepszy dźwięk</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.39:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">01-05-2000</data_premiery>
+          <data_premiery region="pl">14-07-2000</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+    <film numer_filmu="21" idRef="g2">
+      <plakat>https://cdn.shopify.com/s/files/1/1416/8662/products/american_beauty_1999_original_film_art_f_5000x.jpg?v=1569275709</plakat>
+      <informacje_o_filmie>
+        <tytul>American Beauty</tytul>
+        <org_tytul>American Beauty</org_tytul>
+        <rezyser>Sam Mendes</rezyser>
+        <kraj_produkcji>USA</kraj_produkcji>
+        <ocena_na_filmwebie>7.6</ocena_na_filmwebie>
+        <ocena_rotten_tomatoes jednostka="%">87</ocena_rotten_tomatoes>
+        <ocena_osobista>10/10</ocena_osobista>
+        <box_office waluta="$">356300000</box_office>
+        <liczba_oscarow>5</liczba_oscarow>
+        <lista_oscarow>
+          <oscar>Najlepszy film</oscar>
+          <oscar>Najlepszy reżyser</oscar>
+          <oscar>Najlepszy scenariusz oryginalny</oscar>
+          <oscar>Najlepsze zdjęcia</oscar>
+          <oscar>Najlepszy aktor pierwszoplanowy</oscar>
+        </lista_oscarow>
+        <format_obrazu>2.35:1</format_obrazu>
+        <daty_premiery>
+          <data_premiery region="global">08-09-1999</data_premiery>
+          <data_premiery region="pl">11-02-2000</data_premiery>
+        </daty_premiery>
+      </informacje_o_filmie>
+    </film>
+  </kolekcja_filmow_oscarowych>
+</baza_filmow>

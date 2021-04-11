@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Baza filmów nagrodzonych oscarem
+  form(action='/moviecollection' method='post')
+    label(for='fname') Podaj nazwę pliku z filmami
+    br
+    input#fname(type='file' name='fname' value='')
+    br
+    input(type='submit' value='Submit')

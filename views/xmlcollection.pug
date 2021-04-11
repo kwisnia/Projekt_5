@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Kolekcja filmów nagrodzonych Oscarem
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        header Kolekcja filmow oscarowych
+        button(onClick="document.location.href='/moviecollection/addMovie'") Dodaj nowy film
+        button(onClick="document.location.href='/moviecollection/editGenres'") Edytuj gatunki
+        .movieCollection
+            block movie
